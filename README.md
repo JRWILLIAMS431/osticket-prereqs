@@ -78,20 +78,26 @@ Reload IIS (Open IIS, Stop and Start the server)
 Go to sites -> Default -> osTicket
 On the right, click “Browse *:80”
 
-Some of the extensions will be disabled
-Go back to IIS, sites -> Default -> osTicket
+Some extensions will be disabled
+
+Enable them by going back to IIS, sites -> Default -> osTicket
+
 Double-click PHP Manager
+
 Click “Enable or disable an extension”
-Enable: php_imap.dll
-Enable: php_intl.dll
-Enable: php_opcache.dll
-Refresh the osTicket site in your browse, observe the changes
+
+Enable: php_imap.dll, php_intl.dll, php_opcache.dll
+
+Refresh the osTicket site in your IIS browse, review the changes
 
 Rename: ost-sampleconfig.php file to ost-config.php
+
 From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
+
 To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 
 Assign Permissions: ost-config.php
+
 Disable inheritance -> Remove All
 New Permissions -> Everyone -> All
 
